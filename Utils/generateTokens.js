@@ -7,7 +7,7 @@ const generateTokenAndSetCookie = (userId, res) => {
     secure: true,
     sameSite: 'None',
     maxAge: 3600000,
-    domain:'cypher-test-frontend.vercel.app',
+    domain:'.vercel.app',
   });
 };
 
