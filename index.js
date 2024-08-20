@@ -20,11 +20,9 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser()); // Cookie-parser middleware should be before the routes
 app.use(cors({
-    origin: 'https://cypher-test-frontend.vercel.app', // Your frontend URL
-    credentials: true, // Allow cookies and other credentials
+    origin: 'https://cypher-test-frontend.vercel.app',
+    credentials: true,
   }));
-
-
 
 // Define routes
 app.use('/auth', authrouter);
